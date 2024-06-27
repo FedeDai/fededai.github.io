@@ -1,78 +1,125 @@
-h1 {
-    background-color: rgb(154, 218, 175);
-    padding: 10px;
+/* Reset básico */
+* {
     margin: 0;
-    color: #000000;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
-    font-family: "Playwright DE Ground", cursive;
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-    padding: 0;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    background-color: #9cf8d9;
+    color: #333;
+    padding: 20px;
 }
 
-h2{
-    text-align: center;
-}
-
-article
-{
-    font-family: "Playwright DE Ground", cursive;
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
+/* Estilos para el encabezado */
 header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3a3a3a;
+header h1 {
+    font-size: 2rem;
 }
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: rgb(154, 218, 175);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-li a:hover:not(.active) {
-    background-color: #3a3838;
-}
-
-/* .active {
-    background-color: rgb(39, 245, 107);
-} */
-h1{
-    padding: 10px;
-    margin: 0;
+h2 {
     text-align: center;
 }
+/* Estilos para los subtítulos */
+.subtitulo {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
 
+/* Estilos para los artículos */
+.container {
+    background: #a8b1d8;
+    border: 2px solid #6f00ff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center; /* Centrar el texto y elementos en línea */
+}
 
-.footer {
-    font-size: larger;
-    text-align: center;
-    background-color: #3a3a3a;
-    color: rgb(154, 218, 175);
-    padding: 15px;
+.tituloBiografia {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.image, .video {
     width: 100%;
-    font-weight: bold;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las citas */
+p {
+    margin-bottom: 10px;
+}
+
+p b {
+    color: #333;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333;
+    color: #74fdb2;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.25rem;
+    }
+
+    .tituloBiografia {
+        font-size: 1.1rem;
+    }
+
+    footer h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .tituloBiografia {
+        font-size: 1rem;
+    }
+
+    footer h2 {
+        font-size: 1.25rem;
+    }
 }
