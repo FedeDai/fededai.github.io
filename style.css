@@ -8,32 +8,35 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
-    background-color: #1e1858;
+    background-color: #28348c;
     color: #141316;
     padding: 20px;
 }
 
 /* Estilos para el encabezado */
 header {
-    background: #6a6085ab;
+    background: #6a81eeab;
     color: #cacaca;
-    padding: 20px 0;
+    padding: 35px 0px;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 header h1 {
     font-size: 2rem;
 }
-h2 {
+h3 {
     color:#1b1313;
     text-align: center;
 }
 /* Estilos para los subtítulos */
 .subtitulo {
-    font-size: 1.5rem;
-    color: #afafaf;
+    font-size: 1.6rem;
+    color: #8c9dfc;
+    margin-top: 35px;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .container h3 {
@@ -42,9 +45,9 @@ h2 {
 
 /* Estilos para los artículos */
 .container {
-    background: #a8b1d8;
-    border: 2px solid #6f00ff;
-    border-radius: 5px;
+    background: #a1a5c5;
+    border: 5px solid #530c73;
+    border-radius: 10px;
     padding: 20px;
     width: 80%;
     max-width: 800px;
@@ -62,8 +65,13 @@ h2 {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.disclaimer {
+    max-width: 100px;
+    margin-bottom: 10px;
 }
 
 /* Estilos para las citas */
@@ -77,15 +85,16 @@ p b {
 
 /* Estilos para el pie de página */
 footer {
-    background: #333;
-    color: #74fdb2;
-    padding: 10px 0;
+    background: #10f600;
+    color: #030000;
+    padding: 30px 0;
     text-align: center;
     margin-top: 20px;
+    border-radius: 50px;
 }
 
 footer h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 /* Media Queries */
@@ -127,4 +136,18 @@ footer h2 {
     footer h2 {
         font-size: 1.25rem;
     }
+}
+
+.blink
+{
+    animation:1s blinker linear infinite;
+    -webkit-animation:2s blinker linear infinite;
+    -moz-animation:5s blinker linear infinite;
+}
+
+@keyframes blinker
+{
+    0% { opacity: 1.1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.1; }
 }
